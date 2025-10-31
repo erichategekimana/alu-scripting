@@ -6,7 +6,7 @@ import requests
 def top_ten(subreddit):
     """Queries Reddit API and prints titles of first 10 hot posts."""
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "Mozilla/5.0"}
+    headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"}
     params = {"limit": 10}
 
     try:
@@ -28,4 +28,6 @@ def top_ten(subreddit):
     for post in posts:
         title = post.get("data", {}).get("title")
         if title:
-            print(title)
+            print(t
+﻿
+itle)
