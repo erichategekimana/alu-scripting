@@ -28,6 +28,4 @@ def top_ten(subreddit):
     for post in posts:
         title = post.get("data", {}).get("title")
         if title:
-            print(t
-﻿
-itle)
+            print(title)
